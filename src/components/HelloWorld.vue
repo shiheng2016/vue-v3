@@ -10,6 +10,8 @@ export default {
   props: {
     msg: String
   },
+  // data不是一个对象而是一个函数 ? 生成新的实例的时候，data就会返回一个新的对象
+  // 私有属性 互不干扰
   data() {
     return {
       color: 'red',
